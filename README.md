@@ -10,6 +10,6 @@ Minimalistic Markdown Editor
 Go to releases and download your OS version.
 
 ## Roadmap
-[X] Interpreting Markdown
-[X] Export to PDF
-[ ] Support Tables & checkboxes
+- [x] Interpreting Markdown
+- [x] Export to PDF
+- [ ] Support Tables & checkboxes
