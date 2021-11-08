@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="h-full rounded">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+    <link href="./dist/tailwind.css" rel="stylesheet">
+    <script src="./dist/renderer.js"></script>
+    <title>MarkTexter</title>
+  </head>
+  <body class="w-full h-full bg-gray-100">
+    <div class="flex w-full h-full">
+      <div class="h-full w-1/2 backdrop-filter-blur">
+        <textarea id="inputText" class="w-full h-full border-none p-4 block overflow-auto outline-none"></textarea>
+      </div>
+      <div id="formatText" class="w-1/2 h-full p-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200"></div>
+    </div>
+  </body>
+</html>

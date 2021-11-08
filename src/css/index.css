@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-4xl py-2 font-bold;
+  }
+  h2 {
+    @apply text-2xl py-2 font-bold;
+  }
+  h3 {
+    @apply text-xl py-2;
+  }
+  h4 {
+    @apply text-lg py-2;
+  }
+  a{
+      @apply text-blue-400 hover:text-blue-600 hover:underline
+  }
+  ol{
+      @apply list-decimal p-4
+  }
+  ul{
+      @apply list-disc p-4
+  }
+}
