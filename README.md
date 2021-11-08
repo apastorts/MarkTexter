@@ -3,7 +3,7 @@ Minimalistic Markdown Editor
 
 ## How to start developing MarkTexter
 
-1. Install the node packages with `npm install`
+1. Install node packages with `npm install`
 2. Start debugging with `npm start`
 
 ## I just want to use the program
