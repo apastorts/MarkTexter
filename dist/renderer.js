@@ -63,4 +63,4 @@ function convertMarkdown() {
     document.getElementById('formatText').innerHTML = converter.makeHtml(text);
 }
 
-window.addEventListener("keydown", convertMarkdown, true);
+window.addEventListener("input", convertMarkdown);

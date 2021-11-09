@@ -24,4 +24,10 @@
   ul{
       @apply list-disc p-4
   }
+  table{
+      @apply w-full shadow rounded p-4
+  }
+  tr{
+      @apply p-4 
+  }
 }

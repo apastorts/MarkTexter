@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "prod": "npx tailwindcss -i ./src/css/index.css -o ./dist/tailwind.css && npx webpack --config webpack.config.js"
+    "prod": "npx tailwindcss -i ./src/css/index.css -o ./dist/tailwind.css"
   },
   "author": "Abel Pastor",
   "license": "MIT",
