@@ -30,4 +30,10 @@
   tr{
       @apply p-4 
   }
+  .task-list-item{
+      @apply p-4
+  }
+  code{
+      @apply shadow p-2 rounded bg-gray-800 text-green-400 mb-4 block
+  }
 }

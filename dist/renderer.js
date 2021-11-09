@@ -48,7 +48,10 @@ ipcRenderer.on('FILE_PDF', (event, args) => {
       </style>
     </head>
     `;
-    var converter = new showdown.Converter({tables: true});
+    var converter = new showdown.Converter({
+      tables: true, 
+      tasklists: true
+    });
     const html = converter.makeHtml(document.getElementById('inputText').value);
     pdf.html(style + '<body><div>'+ html + '</div></body>', {
       callback: function (pdf, path) {
@@ -58,7 +61,10 @@ ipcRenderer.on('FILE_PDF', (event, args) => {
 })
 
 function convertMarkdown() {
-    var converter = new showdown.Converter({tables: true});
+    var converter = new showdown.Converter({
+      tables: true,
+      tasklists: true
+    });
     var text = document.getElementById('inputText').value;
     document.getElementById('formatText').innerHTML = converter.makeHtml(text);
 }
