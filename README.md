@@ -12,4 +12,5 @@ Go to releases and download your OS version.
 ## Roadmap
 - [x] Interpreting Markdown
 - [x] Export to PDF
-- [ ] Support Tables & checkboxes
+- [x] Support Tables & checkboxes
+- [ ] Improve PDF Style
