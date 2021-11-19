@@ -664,6 +664,11 @@ h4 {
   line-height: 1.75rem;
 }
 
+p{
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
 a{
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity))
@@ -698,7 +703,8 @@ tr{
 }
 
 .task-list-item{
-  padding: 1rem
+  padding-left: 1rem;
+  padding-right: 1rem
 }
 
 code{
