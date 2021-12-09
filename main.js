@@ -1,6 +1,5 @@
-const { app, BrowserWindow, Menu, globalShortcut, dialog } = require('electron');
-
-const path = require('path');
+const { app, BrowserWindow, Menu, ipcRenderer, globalShortcut, dialog } = require('electron');
+var files = [];
 
 function createWindow (){
     const win = new BrowserWindow({
@@ -99,11 +98,26 @@ function createWindow (){
     });
 
     win.loadFile('index.html')
+
+    setTimeout(() => {
+        if(files.length > 0){
+            win.webContents.send("FILE_OPEN_NEW", files[0])
+        }
+    }, 3000)
 }
 
 app.whenReady().then(() => {
     createWindow();
-    app.on('activate', function () {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    })
+    
+    // app.on('activate', function () {
+    //     if (BrowserWindow.getAllWindows().length === 0) createWindow()
+    // })
+
+    app.on('window-all-closed', function() {
+        app.quit();
+    });
 })
+
+app.on('open-file', function(event, filePath) {
+    files.push(filePath)
+});
