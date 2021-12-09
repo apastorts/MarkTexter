@@ -7,6 +7,7 @@ function createWindow (){
         width: 800,
         height: 600,
         transparent:false,
+        icon: __dirname + '/MarkTexter.png',
         vibrancy: 'ultra-dark',
         webPreferences: {
             nodeIntegration: true,
