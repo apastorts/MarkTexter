@@ -1,5 +1,10 @@
 const { app, BrowserWindow, Menu, ipcRenderer, globalShortcut, dialog } = require('electron');
 var files = [];
+const contextMenu = require('electron-context-menu');
+
+contextMenu({
+	showSaveImageAs: true
+});
 
 function createWindow (){
     const win = new BrowserWindow({
@@ -11,6 +16,7 @@ function createWindow (){
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
+            spellcheck: true,
         }
     })
 
@@ -93,6 +99,8 @@ function createWindow (){
       ])
       Menu.setApplicationMenu(menu)
 
+      
+
     globalShortcut.register("CmdOrCtrl+F12", () => {
         win.isFocused() && win.webContents.toggleDevTools();
     });
@@ -108,10 +116,6 @@ function createWindow (){
 
 app.whenReady().then(() => {
     createWindow();
-    
-    // app.on('activate', function () {
-    //     if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    // })
 
     app.on('window-all-closed', function() {
         app.quit();
