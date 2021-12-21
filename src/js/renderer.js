@@ -91,6 +91,7 @@ function convertMarkdown() {
     });
     var text = document.getElementById('inputText').value;
     document.getElementById('formatText').innerHTML = converter.makeHtml(text);
+    document.getElementById('inputText').style.height = (document.getElementById('formatText').scrollHeight)+"px";
 }
 
 window.addEventListener("input", convertMarkdown);
