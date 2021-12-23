@@ -1,3 +1,4 @@
+![](marktexter.png "MarkTexter Editor")
 # MarkTexter
 Minimalistic Markdown Editor
 
@@ -13,4 +14,10 @@ Go to releases and download your OS version.
 - [x] Interpreting Markdown
 - [x] Export to PDF
 - [x] Support Tables & checkboxes
+- [x] Spellchecking
+- [x] Context Menu
+- [x] Default Program (Mac & Linux)
+- [ ] Default Program (Windows)
+- [ ] Allow saving same file without menu
+- [ ] Recent Opened Files
 - [ ] Improve PDF Style
